@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.offers-page {
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+
+  .chosen {
+    background: rgba(167, 243, 208, 0.5);
+  }
+
+  table {
+    tbody {
+      tr {
+        td {
+          text-align: left;
+        }
+
+        td:first-child {
+          font-weight: bold;
+          padding-left: 5px;
+          width: 47%;
+        }
+      }
+    }
+
+    tfoot {
+      td {
+        text-align: right;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
